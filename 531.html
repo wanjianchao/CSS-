@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css网页布局</title>
+	<style>
+	* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.container {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+.logo{
+	float: left;
+    width: 190px;
+    margin: 30px auto;
+}
+.nav{
+	float: left;
+	width: 310px;
+	height: 40px;
+	margin: 30px 0 0 20px;
+}
+.nav li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 40px;
+	font-size:18px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+
+	
+}
+.nav a{
+	float:left;
+	color:rgba(5,5,5,1);
+}
+.nav a:hover{
+	border-bottom: 2px rgba(0,163,255,1) solid;
+	padding-bottom: 6px;
+}
+.form {
+    float: left;
+    margin-top: 31px;
+    margin-left: 170px;
+
+}
+.l1{
+	float: left;
+	width: 332px;
+	height: 12px;
+    padding: 13px;
+	border: 1px rgba(0,163,255,1) solid;
+}
+.l2{
+   float: left;
+   width:50px;
+   height:40px;
+   border: 1px rgba(0,163,255,1) solid;
+   background:rgba(0,163,255,1) url('../images/000.png') no-repeat center center;
+}
+.l3{
+	float: right;
+	margin-top: 44px;
+	margin-left: 32px;
+	width: 60px;
+	height: 12px;
+	font-size:14px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(101,101,101,1)
+}
+.m1{
+	background-color: #1c036c;
+}
+.container1{
+	width: 1200px;
+	height: 420px;
+	margin: 0 auto;
+	position: relative;
+
+}
+.mulu{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:190px;
+    height:420px;
+    background:rgba(0,0,0,1);
+    opacity:0.3;
+}
+.mulu a{
+	color: #ffffff;
+	font-size: 14px;
+}
+.mulu li{
+	float: left;
+	width: 150px;
+	padding-left: 20px;
+	padding-top: 23px ;
+
+}
+.m2{
+	float: right;
+	color: white;
+	margin-right: 5px;
+}
+.container2{
+	width: 1200px;
+	height: 60px;
+	margin: 0 auto;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 2px 0px rgba(118,118,118,0.2);
+}
+.nav2{
+	width: 1105px;
+	height: 18px;
+	padding-top: 21px;
+
+}
+.nav2 li{
+	float: left;
+	width: 125px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	border-right: 1px rgba(190,190,190,1) solid ;
+
+}
+.nav2 a:hover{
+	color:#00A3FFFF;
+}
+.n2{
+	float: right;
+	margin-right: 61px;
+	color: #00A3FFFF;
+}
+.container3{
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+
+}
+.w3{
+	float: left;
+	width: 80px;
+	height: 19px;
+	font-size: 20px;
+	color: #494949FF;
+	padding-top: 37px;
+}
+.w4{
+	float: right;
+	width: 48px;
+	height: 13px;
+	font-size: 12px;
+	color: #A5A5A5FF;
+	padding-top: 45px;
+}
+.container4{
+
+
+	width: 1200px;
+	height: 270px;
+	margin:0 auto;
+
+}
+.r3{
+	float: left;
+	position:relative;
+	padding-right: 15px;
+	width: 228px;
+    height: 270px;
+    background:rgba(255,255,255,1);
+}
+.r2{
+	position:absolute;
+	top: 155px;
+	width: 228px;
+	height: 115px;
+	box-shadow:0px 2px 2px 0px rgba(118,118,118,0.2);
+}
+
+.t1{
+	padding-top: 24px;
+	padding-left: 23px;
+	width: 185px;
+	height: 34px;
+	color: #050505FF;
+	font-size: 14px;
+}
+.t2{
+	width: 119px;
+	height: 13px;
+	padding-top: 17px;
+	padding-left: 23px;
+}
+.t3{
+	color: #FF7C2DFF;
+	font-size: 12px;
+}
+.t4{
+	color: #999999FF;
+	font-size: 12px;
+}
+.r4{
+	float: left;
+	position:relative;
+	
+	width: 228px;
+    height: 270px;
+    background:rgba(255,255,255,1);
+}
+.r5{
+	margin-top: 15px;
+}
+.container5{
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+}
+.y3{
+	float: left;
+	width:140px;
+    height:19px;
+    font-size:20px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(72,72,72,1);
+    padding-top: 39px;
+}
+.y4{
+	float: right;
+	width:48px;
+    height:13px;
+    font-size:12px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(165,165,165,1);
+    padding-top: 44px;
+}
+.y5{
+	float: left;
+	width:327px;
+    height:17px;
+    margin: 44px 366px 21px 292px;
+
+}
+.y5 li{
+    float: left;
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(0,163,255,1);
+    padding-right: 45px;
+}
+.y5 a:hover{
+	color: #00A4FFFF;
+}
+
+.container6{
+	width: 1200px;
+	height: 87px;
+	margin: 0 auto;
+
+}
+.u2{
+	float: left;
+	width:80px;
+    height:19px;
+    font-size:20px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(73,73,73,1);
+    padding-top: 36px;
+}
+
+.container7 {
+    height: 340px;
+    width: 1200px;
+    margin: 0 auto;
+
+    position: relative;
+}    
+.p2 {
+    float: left;
+    height: 322px;
+    width: 472px;
+    position: absolute;
+    }
+.c1{
+    left: 26px;
+    margin-top: -220px;
+    line-height: 36px;
+    color: rgba(249,225,3,1);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Microsoft YaHei;
+    position: relative;
+}
+.c2 {
+    top: 135px;
+    left: 26px;
+    line-height: 36px;
+    position: absolute;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: Microsoft YaHei;
+}
+.c3 {
+    height: 25px;
+    width: 88px;
+    left: 27px;
+    margin-top: 40px;
+    position: relative;
+    border: 2px solid #F9E103;
+    text-align: center;
+}
+.c3>a {
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Microsoft YaHei;
+    color: rgba(249,225,3,1);
+}
+.p3 {
+	float: left;
+    height: 340px;
+    width: 231px;
+    top: 0;
+    left: 486px;
+    position: absolute;
+}
+.c4 {
+    height: 123px;
+    width: 231px;
+    opacity: 0.4;
+    bottom: 0;
+    position: relative;
+    background: black;
+}
+    .p4 >.c4 {
+      height: 123px;
+      width: 231px;
+      opacity: 0.4;
+      bottom: 0;
+      position: relative;
+      background: black;
+    }
+    .p4 {
+    	float: left;
+      height: 351px;
+      width: 231px;
+      top: 0;
+      margin-left: 730px;
+      position: absolute;
+    }
+     .p5 {
+     	float: left;
+      height: 351px;
+      width: 231px;
+      top: 0px;
+      left: 972px;
+      position: absolute;
+    }
+    .p5>.c4 {
+      height: 123px;
+      width: 229px;
+      left: 5px;
+      opacity: 0.4;
+      bottom: 0;
+      position: relative;
+      background: black;
+    }
+    .c4 {
+      margin-top: -130px;
+    }
+    .c5 {
+      top: 20px;
+      left: 30px;
+      position: absolute;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    .c6 {
+      top: 25px;
+      left: 100px;
+      position: absolute;
+      font-size: 13px;
+      color: #FFFFFF;
+    }
+    .c7{
+      top: 49px;
+      left: 30px;
+      width: 185px;
+      position: absolute;
+      font-size: 13px;
+      color: #FFFFFF;
+    }
+    .container8{
+
+    	height: 71px;
+    	background-color: #f3f5f7
+    } 
+    .q1 {
+      margin-top: 130px;
+      margin-left: 666px;
+      position: absolute;
+    }
+    .q1> q3 {
+      margin-top: 14px;
+    }
+    .q1> .q2 {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Microsoft YaHei;
+      color: rgba(51,51,51,1);
+    }
+    .q1> .q4 {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: Sim Sun;
+      color: rgba(51,51,51,1);
+      padding: 8px;
+    }
+    .k8 {
+      margin-top: 130px;
+      margin-left: 890px;
+      position: absolute;
+    }
+    .k8 >.q3 {
+      margin-top: 14px;
+    }
+    .k8 >.q2 {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Microsoft YaHei;
+      color: rgba(51,51,51,1);
+    }
+    .k8 . q4 {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: Sim Sun;
+      color: rgba(51,51,51,1);
+      padding: 8px;
+    }
+    .k9 {
+      margin-top: 130px;
+      margin-left: 1110px;
+      position: absolute;
+    }
+    .k9. q3 {
+      margin-top: 14px;
+    }
+    .k9 .q2 {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Microsoft YaHei;
+      color: rgba(51,51,51,1);
+    }
+    .k9 .q4 {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: Sim Sun;
+      color: rgba(51,51,51,1);
+      padding: 8px;
+  }
+	</style>
+
+
+</head>
+<body>
+	<div class="header">
+		<div class="container clear">
+			<img src="images/00.png" alt="logo图" class="logo" />
+			<ul class="nav clear">
+				<li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业规划</a></li>
+            </ul>
+            <form class="form clear">
+                <input type="text" placeholder="输入关键字" class="l1" />
+                <input type="button" class="l2" />
+            </form>
+            <span class="l3"><a href="#">个人中心</a></span>
+        </div>
+    </div>
+    <div class="m1">
+    	<div class="container1">
+    		<img src="images/01.png" alt="" />
+    		<div class="mulu">
+    			<ul class="clear">
+    			    <li><a href="#">前端开发</a><span class="m2">></span></li>
+    			    <li><a href="#">后端开发</a><span class="m2">></span></li>
+    			    <li><a href="#">移动开发</a><span class="m2">></span></li>
+    			    <li><a href="#">人工智能</a><span class="m2">></span></li>
+    			    <li><a href="#">商业预测</a><span class="m2">></span></li>
+    			    <li><a href="#">云计算&大数据</a><span class="m2">></span></li>
+    			    <li><a href="#">运维&从测试</a><span class="m2">></span></li>
+    			    <li><a href="#">UI设计</a><span class="m2">></span></li>
+    			    <li><a href="#">产品</a><span class="m2">></span></li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+    <div>
+    <div class="n1">
+		<div class="container2">
+			<ul class="nav2 clear">
+				<li><a href="#">精品推荐</a></li>
+				<li><a href="#">JQuery</a></li>
+				<li><a href="#">Spark</a></li>
+				<li><a href="#">MySQL</a></li>
+				<li><a href="#">JavaWeb</a></li>
+				<li><a href="#">MySQL</a></li>
+				<li><a href="#">JavaWeb</a></li>
+				<span class="n2">修改兴趣</span> 
+			</ul>
+			
+		</div>
+	</div>
+	<div>
+	<div class="w1">
+		<div class="container3 clear">
+			<span class="w3">精品推荐</span>
+			<span class="w4">查看全部</span>
+		</div>
+	</div>
+	<div class="r1">
+		<div class="container4 clear">
+			<div class="r3">
+			    <img src="images/11.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Think PHP 5.0博客系统实战项目演练</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/12.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Android 网络图片加载框架详解</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/13.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Angular 2 最新框架+主流技术+项目实战</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/14.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Android Hybrid APP开发实战 H5+原生！</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r4">
+			    <img src="images/15.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Android Hybrid APP开发实战 H5+原生！</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+
+
+		</div>
+	</div>
+    <div class="r5">
+		<div class="container4 clear">
+			<div class="r3">
+			    <img src="images/11.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Think PHP 5.0博客系统实战项目演练</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/12.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Android 网络图片加载框架详解</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/13.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Angular 2 最新框架+主流技术+项目实战</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/14.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Android Hybrid APP开发实战 H5+原生！</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r4">
+			    <img src="images/15.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Android Hybrid APP开发实战 H5+原生！</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+
+
+		</div>
+	</div>
+	<div class="y1">
+		<div class="container5 clear">
+			<span class="y3">前端开发工程师</span>
+			<ul class="y5 clear">
+				<li><a href="#">热门</a></li>
+				<li><a href="#">初级</a></li>
+				<li><a href="#">中级</a></li>
+				<li><a href="#">高级</a></li>
+			</ul>
+			<span class="y4">查看全部</span>
+		</div>
+	</div>
+	<div class="r1">
+		<div class="container4 clear">
+			<div class="r3">
+			    <img src="images/21.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">微软人工智能-数据分析平台</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/22.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Unity Profiler入门</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/23.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Cocos2d-x 引擎源码中的纹理优化</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r3">
+			    <img src="images/24.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Kami2首页界面切换效果</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+		    <div class="r4">
+			    <img src="images/25.png" alt="" />
+			    <div class="r2">
+				    <p class="t1">Android Hybrid APP开发实战 H5+原生！</p>
+				    <p class="t2"><span class="t3">高级</span><span class="t4"> . 1125人在学习</span><p>
+
+			    </div>
+		    </div>
+
+
+		</div>
+	</div>
+	<div class="u1">
+		<div class="container6 clear">
+			<span class="u2">牛人推荐</span>
+		</div>
+	</div>
+	<div class="p1">
+		<div class="container7 clear">
+			<div class="p2">
+				<img src="images/31.png" alt="" />
+				<p class="c1">毕业季</p>
+                <p class="c2">带你华丽转身</p>
+                <div class="c3">
+                    <a href="#">点击查看</a>
+                </div>
+
+			</div>
+			<div class="p3">
+				<img src="images/32.png" alt="" />
+				 <div class="c4">
+
+
+                    <p class="c5">闻老师</p>
+                    <p class="c6">大数据</p>
+                    <p class="c7">高级互联网软件工程师，曾担任某物流公司CRM开发团队TL。多年JAVAEE、大数据领域研发……</p>
+                </div>
+			</div>
+			<div class="p4">
+				<img src="images/33.png" alt="" />
+				<div class="c4">
+                    <p class="c5">汪老师</p>
+                    <p class="c6">前端</p>
+                    <p class="c7">高级软件架构师，全栈开发，多年大型项目管理经验。对WebComponents、Node.js……</p>
+                </div>
+
+			</div>
+			<div class="p5">
+				<img src="images/34.png" alt="" />
+				<div class="c4">
+
+                    <p class="c5">江老师</p>
+                    <p class="c6">前端</p>
+                    <p class="c7">多年软件开发经验和教学经验，精通html,css,js,asp.net等编程语言和数据库系统……</p>
+                </div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+	
+
+	<div class="container8">
+		
+	</div>
+	
+     <div class="q1">
+        <p class="q2">关于雪梨网</p>
+        <ul class="q3">
+          <li class="q4">
+            <a href="#">关于</a>
+          </li>
+          <li class="q4">
+            <a href="#">管理团队</a>
+          </li>
+          <li class="q4">
+            <a href="#">工作机会</a>
+          </li>
+          <li class="q4">
+            <a href="#">客户服务</a>
+          </li>
+          <li class="q4">
+            <a href="#">帮助</a>
+          </li>
+        </ul>
+      </div>
+      <div class="k8">
+        <p class="q2">新手指南</p>
+        <ul class="q3">
+          <li class="q4">
+            <a href="#">如何注册</a>
+          </li>
+          <li class="q4">
+            <a href="#">如何选课</a>
+          </li>
+          <li class="q4">
+            <a href="#">如何拿到毕业证</a>
+          </li>
+          <li class="q4">
+            <a href="#">学分是什么</a>
+          </li>
+          <li class="q4">
+            <a href="#">考试未通过怎么办</a>
+          </li>
+        </ul>
+      </div>
+      <div class="k9">
+        <p class="q2">合作伙伴</p>
+        <ul class="q3">
+          <li class="q4">
+            <a href="#">合作机构</a>
+          </li>
+          <li class="q4">
+            <a href="#">合作导师</a>
+          </li>
+        </ul>
+      </div>
+  </div>	
+</body>
+</html>
